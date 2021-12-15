@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Los fragments necesitan un layout o si no me da error-->
+<fragment
+    android:id="@+id/list_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="myteam.androides.react.app.com.myapplication.Fragments.ListaFragment"
+    tools:context="myteam.androides.react.app.com.myapplication.Fragments.ListaFragment"
+    tools:layout="@android:layout/list_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+</fragment>

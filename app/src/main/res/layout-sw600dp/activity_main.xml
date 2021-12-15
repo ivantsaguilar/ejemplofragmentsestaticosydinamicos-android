@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="myteam.androides.react.app.com.myapplication.Activities.MainActivity"
+    >
+
+    <fragment
+        android:id="@+id/list_fragment"
+        tools:layout="@android:layout/list_content"
+        android:name="myteam.androides.react.app.com.myapplication.Fragments.ListaFragment"
+        tools:context="myteam.androides.react.app.com.myapplication.Fragments.ListaFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <!--El segundo fragment no se coloca como fragment, si no como un FrameLayout para
+    que pueda aparecer y desaparecer-->
+
+    <!--Los fragments de los detalles de las vistas se van a ir
+        agregando en este frameLayout-->
+    <FrameLayout
+        android:id="@+id/list_item"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+</LinearLayout>
+
+
+
